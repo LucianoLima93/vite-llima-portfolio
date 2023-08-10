@@ -15,10 +15,11 @@ const Header = () => {
         <div className='order-1 md:order-2 relative'>
           <div className="flex gap-x-8 w-full justify-end items-center cursor-pointer">
             <Navigation menus={menus}/>
-            <div className='md:block hidden'>
+            <div className='md:block hidden'
+              data-aos="fade-down" data-aos-duration='1400'>
               <ResumeButton label={t('menu.resume')}/>
             </div>
-            <LocaleSwitcher className='md:block hidden'/>
+            <LocaleSwitcher animationDuration={1500} customClass='md:block hidden'/>
           </div>
         </div>
       </header>
