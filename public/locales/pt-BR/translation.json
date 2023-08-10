@@ -1,0 +1,20 @@
+{
+  "homepage": {
+    "introOne": "Olá, meu nome é",
+    "introTwo": "Eu construo produtos para a web",
+    "introThree": "",
+    "introFour": "Desenvolvedor Front End",
+    "introFive": " especializado em construir produtos web de alta qualidade e excepcional experiência para o usuário.",
+    "contact": "Entre em contato"
+  },
+  "menu": {
+    "about": "Sobre",
+    "experience": "Experiência",
+    "education": "Educação",
+    "resume": "Currículo"
+  },
+  "localeLang": {
+    "en": "Inglês",
+    "pt-BR": "Português"
+  }
+}

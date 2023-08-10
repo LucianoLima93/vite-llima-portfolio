@@ -1,0 +1,20 @@
+{
+  "homepage": {
+    "introOne": "Hi, my name is",
+    "introTwo": "I build products for the web",
+    "introThree": "I'm a ",
+    "introFour": "Front-end Developer ",
+    "introFive": "specializing in building (and occasionally designing) exceptional websites and everything in between.",
+    "contact": "Get In Touch"
+  },
+  "menu": {
+    "about": "About",
+    "experience": "Experience",
+    "education": "Education",
+    "resume": "Resume"
+  },
+  "localeLang": {
+    "en": "English",
+    "pt-BR": "Portuguese"
+  }
+}
