@@ -7,12 +7,12 @@ interface LogoProps {
 
 const Logo:React.FC<LogoProps> = ({animation='initializing'}) => {
   return (
-    <div className='hover:scale-110 transition-all duration-200'>
+    <div className='hover:scale-110 transition-all duration-200 order-2 md:order-1'>
       <div
         data-aos={animation === 'initializing' ? 'zoom-in' : ''}
         data-aos-duration={animation === 'initializing' ? '1500' : ''}
         data-aos-easing={animation === 'initializing' ? 'ease-in-out' : ''}
-        className={`${animation === 'initializing' ? 'w-16 h-16' : 'w-24 h-24'} order-2 md:order-1
+        className={`${animation === 'initializing' ? 'w-16 h-16' : 'w-24 h-24'}
         relative cursor-pointer`}>
         <FontAwesomeIcon icon={faDiamond} className={`text-teal-300 ${animation === 'initializing' ? 'text-[4em]' : 'text-[6em]'}`} />
         {animation === 'loading' && <span className="animate-ping absolute left-0 top-0 inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>}

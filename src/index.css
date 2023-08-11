@@ -14,7 +14,13 @@ body {
   @apply bg-gray-900 selection:bg-teal-500 selection:text-gray-900;
 }
 
+.high-lighter {
+  transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
+}
 @layer components {
+  .active-tab {
+    @apply bg-gray-800 text-teal-300;
+  }
   .before-after-content {
     content: '';
   }
