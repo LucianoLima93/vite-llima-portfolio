@@ -1,19 +1,17 @@
 import { useTranslation } from "react-i18next"
 
 interface ITitleProps {
-  index: number | string;
   title: string;
 }
 
-const Title:React.FC<ITitleProps> = ({index, title}) => {
+const Title:React.FC<ITitleProps> = ({title}) => {
   const { t } = useTranslation();
 
   return (
-    <div className="flex items-baseline justify-start gap-2">
-      <span className="block text-2xl text-teal-300 font-semibold">{index}</span>
-      <h2 className='text-3xl font-semibold text-gray-50 w-fit'>{t(`titles.${title}`)}</h2>
-      <div className="w-full h-[1px] bg-gray-500"/>
-    </div>
+    <h2 className={`flex items-baseline relative mx-0 mt-2 whitespace-nowrap w-full text-3xl font-semibold text-gray-50
+      before:before-counter-increment after:after-numbered-heading`}>
+      {t(`titles.${title}`)}
+    </h2>
   )
 }
 

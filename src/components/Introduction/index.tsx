@@ -8,7 +8,7 @@ const Home = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="grid grid-cols-12 justify-between gap-4">
+    <section className="grid grid-cols-12 justify-between gap-4">
       <div className="col-span-12 pb-8 px-5 md:px-0">
         <span className="text-base text-teal-300 mb-6 block" data-aos="fade-up"
           data-aos-delay="1500" data-aos-duration='800'>{t('homepage.introOne')}</span>
@@ -34,7 +34,7 @@ const Home = () => {
           <FontAwesomeIcon icon={faAngleDown} className="text-teal-300 pt-1 md:text-[2em] text-[1.8em]" />
         </div>
       </motion.div>
-    </div>
+    </section>
   )
 }
 

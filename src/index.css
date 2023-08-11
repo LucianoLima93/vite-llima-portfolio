@@ -7,13 +7,24 @@ html {
   scroll-behavior: smooth;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
-
+main {
+  counter-reset: section 0;
+}
 body {
-  @apply bg-gray-900;
+  @apply bg-gray-900 selection:bg-teal-500 selection:text-gray-900;
 }
 
 @layer components {
   .before-after-content {
+    content: '';
+  }
+  .before-counter-increment {
+    @apply relative bottom-1 mr-2 text-teal-300 text-xl font-medium;
+    counter-increment: section 1;
+    content: "0" counter(section) "."
+  }
+  .after-numbered-heading {
+    @apply block relative -top-1 w-72 h-[1px] ml-5 bg-gray-700;
     content: '';
   }
   .button-effect {

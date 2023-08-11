@@ -5,7 +5,7 @@ import Footer from './components/Footer';
 import Introduction from './components/Introduction';
 import About from './components/About';
 import Loading from './components/Loading';
-import Experience from './components/Experience';
+import Jobs from './components/Jobs';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -41,7 +41,7 @@ function App() {
         <main className="flex flex-col justify-between h-screen w-full max-w-[88rem] mx-auto md:mt-24 mt-4 text-slate-50">
           <Introduction />
           <About />
-          <Experience />
+          <Jobs />
           <Footer/>
         </main>
       </>
