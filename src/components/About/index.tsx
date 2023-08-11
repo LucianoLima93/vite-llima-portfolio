@@ -1,10 +1,11 @@
 import image from '@/assets/images/eu.jpg';
+import Title from '../shared/Title';
 
 const About = () => {
   return (
-    <div className='grid grid-cols-12 justify-center w-full gap-x-8' id='about'>
+    <div className='grid grid-cols-12 justify-center w-full gap-x-8 mt-48' id='about'>
       <div className='flex flex-col gap-8 w-full col-span-7'>
-        <h2 className='text-3xl font-semibold text-gray-400'>Sobre Mim</h2>
+        <Title index={'01. '} title='about'/>
         <p className='font-light'>Olá, meu nome é Luciano, trabalho com desenvolvimento desde 2017, mas meu interesse com desenvolvimento web iniciou-se em 2019, 
         quando após ser aprovador em uma seleção interna para um novo projeto de desenvolvimento web, comecei a estudar <b className='text-teal-500'>HTML</b>, <b className='text-teal-500'>CSS</b> e <b className='text-teal-500'>JavaScript</b>.<br/><br/>
         Desde então, venho estudando e me aperfeiçoando cada vez mais, buscando sempre aprender novas tecnologias e metodologias de desenvolvimento.<br/>

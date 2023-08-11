@@ -16,5 +16,10 @@
   "localeLang": {
     "en": "Inglês",
     "pt-BR": "Português"
+  },
+  "titles": {
+    "about": "Sobre Mim",
+    "experience": "Onde já trabalhei",
+    "education": "Educação"
   }
 }

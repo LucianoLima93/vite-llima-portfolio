@@ -2,10 +2,10 @@ import { useEffect, useState } from 'react'
 import WebFont from 'webfontloader';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Home from './components/Home';
+import Introduction from './components/Introduction';
 import About from './components/About';
-import Logo from './components/Logo';
 import Loading from './components/Loading';
+import Experience from './components/Experience';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -16,9 +16,19 @@ function App() {
       }
     });
   },[])
+  const verifyHash = () => {
+    const hash = window.location.hash;
+    if(hash) {
+      const element = document.querySelector(hash);
+      if(element) {
+        element.scrollIntoView({behavior: 'smooth'});
+      }
+    }
+  };
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
+      verifyHash();
     }, 2000)
   }, [])
   return (
@@ -29,8 +39,9 @@ function App() {
       <>
         <Header/>
         <main className="flex flex-col justify-between h-screen w-full max-w-[88rem] mx-auto md:mt-24 mt-4 text-slate-50">
-          <Home />
+          <Introduction />
           <About />
+          <Experience />
           <Footer/>
         </main>
       </>
