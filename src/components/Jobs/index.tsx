@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useRef } from "react";
 import Title from "../shared/Title";
 import useJobs from "./useJobs";
 import Content from "./Content";

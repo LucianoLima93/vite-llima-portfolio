@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const useJobs = ({defaulOpen, highLighter}:IUseJobs) => {
+const useJobs = ({ highLighter }:IUseJobs) => {
   const switchTab = (event:React.MouseEvent, tabName:string):void => {
     event.preventDefault();
     let tabcontent: HTMLCollectionOf<Element> = document.getElementsByClassName("tabcontent");
