@@ -4,7 +4,11 @@ export default {
   theme: {
     extend: {
       keyframes: {'fade-in': { '0%': { opacity: 0 }, '100%': { opacity: 1 }}},
-      animation: {'fade-in': 'fade-in 1s ease-out'}
+      animation: {'fade-in': 'fade-in 1s ease-out'},
+      gridTemplateColumns: {
+        '3/2': '3fr 2fr',
+        '1/4': '1fr 4fr',
+      },
     },
   },
   plugins: [],

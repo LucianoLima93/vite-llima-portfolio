@@ -1,15 +1,15 @@
 import { useEffect } from "react";
 
-const useJobs = ({ highLighter }:IUseJobs) => {
-  const switchTab = (event:React.MouseEvent, tabName:string):void => {
+const useJobs = ({ highLighter }: IUseJobs) => {
+  const switchTab = (event: React.MouseEvent, tabName: string): void => {
     event.preventDefault();
     let tabcontent: HTMLCollectionOf<Element> = document.getElementsByClassName("tabcontent");
-    Array.from(tabcontent).forEach((element:Element) => {
+    Array.from(tabcontent).forEach((element: Element) => {
       (element as HTMLElement).style.display = "none";
     });
 
     let tablinks: HTMLCollectionOf<Element> = document.getElementsByClassName("tab-jobs-links");
-    Array.from(tablinks).forEach((element:Element) => {
+    Array.from(tablinks).forEach((element: Element) => {
       (element as HTMLElement).className = (element as HTMLElement).className.replace(" active-tab", "");
     });
     const tabindex = (event.currentTarget as HTMLElement).getAttribute("tabindex");
@@ -33,12 +33,49 @@ const useJobs = ({ highLighter }:IUseJobs) => {
       name: "Fmx2"
     },
   ];
-
+  const jobs = [
+    {
+      id: 'Fmx1',
+      job: {
+        position: 'position',
+        link: 'link',
+        company: 'company',
+        description: [
+          'description',
+          'description'
+        ],
+        technologies: ['technologies', 'technologies', 'technologies', 'technologies'],
+        period: 'period'
+      }
+    },
+    {
+      id: 'Nelogica',
+      job: {
+        position: 'position',
+        link: 'link',
+        company: 'company',
+        description: ['description', 'description', 'description', 'description'],
+        technologies: ['technologies', 'technologies', 'technologies', 'technologies'],
+        period: 'period'
+      }
+    },
+    {
+      id: 'Fmx2',
+      job: {
+        position: 'position',
+        link: 'link',
+        company: 'company',
+        description: ['description', 'description', 'description'],
+        technologies: ['technologies', 'technologies', 'technologies', 'technologies'],
+        period: 'period'
+      }
+    }
+  ]
   useEffect(() => {
     document.getElementById("tabJob0")?.click();
   }, []);
 
-  return {switchTab, allTabs};
+  return { switchTab, allTabs, jobs };
 };
 
 export default useJobs;

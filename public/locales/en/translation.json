@@ -21,5 +21,62 @@
     "about": "About Me",
     "experience": "Where I’ve Worked",
     "education": "Education"
+  },
+  "jobs": [
+    {
+      "position": "Desenvolvedor Front End Pleno na",
+      "company": "FMX",
+      "period": "Junho - Agosto 2022",
+      "link": "https://fmx.com.br/",
+      "description": [
+        "Desenvolvimento de projetos web para integração em sistema já existentes na área de previdência utilizando React.",
+        "Arquitetura e desenvolvimento do projeto web base para atualização de tecnologia web utilizando React, Vitest para criação de testes e Storybook para documentação do componentes front-end."
+      ],
+      "technologies": [
+        "React",
+        "Vitest",
+        "Storybook",
+        "TypeScript"
+      ]
+    },
+    {
+      "position": "Desenvolvedor Front End II na",
+      "company": "Nelogica",
+      "period": "Abril 2021 - Março 2023",
+      "link": "https://fmx.com.br/",
+      "description": [
+        "Responsável pela arquitetura do site Invest Academy. Colaborando em conjunto com a equipe de UX/UI design, tech lead e outro desenvolvedores para criação e implantação do projeto.",
+        "Atuando com desenvolvimento e melhorias constantes de plataformas web com Vue como principal skill.",
+        "Reestruturação da loja (incorporada) de opcionais do Vector e Profit de acordo com layout estruturados pelo time de UX.",
+        "Responsável pela arquitetura e desenvolvimento front end de um widget de cotação atualmente utilizado no site da Nelogica e BMC."
+      ],
+      "technologies": [
+        "React",
+        "VueJs",
+        "Axios",
+        "Javascript",
+        "Kanban"
+      ]
+    },
+    {
+      "position": "Analista de Desenvolvimento II na",
+      "company": "FMX",
+      "period": "Outubro 2017 - Abril 2021",
+      "link": "https://fmx.com.br/",
+      "description": [
+        "Analista de Requisitos responsável por atuar em diversos projetos dentro da Fábrica de Software. Em constante contanto com o cliente e sempre buscando atender todas as demandas de forma humana e precisa.",
+        "Responsável por projetos de software com foco em inovação utilizando VueJs",
+        "Responsável pelo desenvolvimento de api's java - spring boot"
+      ],
+      "technologies": [
+        "VueJs",
+        "Axios",
+        "Javascript",
+        "Scrum"
+      ]
+    }
+  ],
+  "root": {
+    "usedTechnologies": "Habilidades e competências desenvolvidas"
   }
 }
