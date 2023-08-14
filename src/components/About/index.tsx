@@ -16,7 +16,7 @@ const About = () => {
           <li className='col-span-6 text-teal-300'>JavaScript (ES6+)</li>
           <li className='col-span-6 text-teal-300'>TypeScript</li>
           <li className='col-span-6 text-teal-300'>React</li>
-          <li className='col-span-6 text-teal-300'>NextJS</li>
+          <li className='col-span-6 text-teal-300'>Vitest</li>
         </ul>
       </div>
       <div className='col-span-5'>

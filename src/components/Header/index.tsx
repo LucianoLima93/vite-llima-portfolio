@@ -2,11 +2,11 @@ import Logo from '../Logo';
 import useHeader from './useheader';
 import Navigation from '../Navigation';
 import NavigationMobile from '../Navigation/NavigationMobile';
-import ResumeButton from '../ResumeButton';
 import LocaleSwitcher from '../LocaleSwitcher';
+import Button from '../shared/Button';
 
 const Header = () => {
-  const { menus, t } = useHeader();
+  const { menus } = useHeader();
   return (
     <>
       <NavigationMobile menus={menus}/>
@@ -17,7 +17,12 @@ const Header = () => {
             <Navigation menus={menus}/>
             <div className='md:block hidden'
               data-aos="fade-down" data-aos-duration='1400'>
-              <ResumeButton label={t('menu.resume')}/>
+              <Button
+                label='menu.resume'
+                onClick={() => {
+                  window.open('../../../public/assets/resume.pdf', '_blank');
+                }}
+              />
             </div>
             <LocaleSwitcher animationDuration={1500} customClass='md:block hidden'/>
           </div>

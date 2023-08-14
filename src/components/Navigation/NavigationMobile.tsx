@@ -4,7 +4,7 @@ import { motion, useCycle } from "framer-motion";
 import useNavigation from './useNavigation';
 import { useDimensions } from '../../hooks/useDimensions';
 import MenuToggle from './MenuToggle';
-import ResumeButton from '../ResumeButton';
+import Button from '../shared/Button';
 
 interface INavigationMobileProps {
   menus: NavigationMenu[];
@@ -28,16 +28,21 @@ const NavigationMobile: React.FC<INavigationMobileProps> = ({ menus }) => {
         variants={sidebarVariants} />
       <motion.ul variants={ulVariants} className='absolute top-24 w-full px-6 pt-4 flex flex-col gap-4 h-full'>
         {menus.map((menu: NavigationMenu) => (
-          <motion.li variants={itemVariants} key={menu.path} className='font-bold text-base'>
+          <motion.li variants={itemVariants} key={menu.name} className='font-bold text-base'>
             {t(`menu.${menu.name}`)}
           </motion.li>
         ))}
         <motion.div variants={itemVariants} className='flex flex-col gap-4 mt-6'>
-          <ResumeButton variant='secondary' label={t('menu.resume')}/>
+          <Button
+            label='menu.resume'
+            onClick={() => {
+              window.open('../../../public/assets/resume.pdf', '_blank');
+            }}
+          />
           {/* <LocaleSwitcher /> */}
         </motion.div>
       </motion.ul>
-      <MenuToggle toggle={() => toggleOpen()}/>
+      <MenuToggle toggle={() => toggleOpen()} />
     </motion.nav>
   )
 }

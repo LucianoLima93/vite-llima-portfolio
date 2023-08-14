@@ -1,0 +1,17 @@
+.button-effect {
+  @apply text-teal-300 px-4 py-5 text-lg relative border-none bg-transparent outline-none;
+}
+.button-effect::after, .button-effect::before {
+  @apply block absolute w-1/5 h-1/5 border-2 rounded-sm;
+  content: '';
+  transition: all 0.6s ease;
+}
+.button-effect::after {
+  @apply bottom-0 right-0 border-t-transparent border-l-transparent border-b-teal-300 border-r-teal-300;
+}
+.button-effect::before {
+  @apply top-1 left-1 border-b-transparent border-r-transparent border-t-teal-300 border-l-teal-300;
+}
+.button-effect:hover::after, .button-effect:hover::before {
+  @apply border-b-teal-300 border-r-teal-300 border-t-teal-300 border-l-teal-300 w-full h-full;
+}

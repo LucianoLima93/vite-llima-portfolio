@@ -2,7 +2,7 @@ import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import SocialMedias from '../SocialMedias'
 import { useTranslation } from 'react-i18next'
-import { motion } from 'framer-motion'
+import Button from '../shared/Button'
 
 const Home = () => {
   const { t } = useTranslation();
@@ -18,22 +18,19 @@ const Home = () => {
           data-aos-delay="1500" data-aos="fade-up" data-aos-duration='600'>{t('homepage.introTwo')}</h2>
         <p className="font-light mb-12 md:w-6/12" data-aos="fade-up" data-aos-duration='500' data-aos-delay="1500">{t('homepage.introThree')}
           <b className="text-teal-300">{t('homepage.introFour')}</b>{t('homepage.introFive')}</p>
-        <a href="mailto:luciano.g.lima93@gmail.com" className="button-effect"
-          data-aos-delay="1500" data-aos="fade-up" data-aos-duration='400'>{t('homepage.contact')}</a>
+        <Button variant='outlined'
+          onClick={() => {
+            window.location.href = "mailto:luciano.g.lima93@gmail.com"
+          }}
+         label={'homepage.contact'}/>
         <SocialMedias />
-      </div>
-      <motion.div
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{
-          duration: 1.5,
-          ease: 'easeInOut'
-        }}
-        className="col-span-12 w-full flex justify-center md:mt-32 md:mb-20 mt-16 mb-6">
-        <div className="border-[3px] border-solid border-teal-300 w-9 h-9 md:w-10 md:h-10 flex items-center justify-center animate-bounce rounded-full">
-          <FontAwesomeIcon icon={faAngleDown} className="text-teal-300 pt-1 md:text-[2em] text-[1.8em]" />
+        <div className='col-span-12 w-full flex justify-center md:mt-32 md:mb-20 mt-16 mb-6 cursor-pointer'>
+          <Button
+            variant='rounded-full'
+            icon={<FontAwesomeIcon icon={faAngleDown} className="text-teal-300 pt-1 md:text-[2em] text-[1.8em]" />}
+          />
         </div>
-      </motion.div>
+      </div>
     </section>
   )
 }
