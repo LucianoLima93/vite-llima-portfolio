@@ -1,11 +1,12 @@
 import image from '@/assets/images/eu.jpg';
 import Title from '../shared/Title';
+import './styles.css';
 
 const About = () => {
   return (
     <section data-aos="fade-up"
     data-aos-duration='1500'
-    className='w-full max-w-[900px] mx-auto py-28' id='about'>
+    className='w-full max-w-[900px] mx-auto' id='about'>
       <Title title='about' />
       <div className='w-full grid grid-cols-3/2 gap-12 mt-12'>
         <div>
@@ -22,7 +23,7 @@ const About = () => {
             <li className='col-span-6 text-teal-300'>Vitest</li>
           </ul>
         </div>
-        <div className='relative w-full max-w-[300px]'>
+        <div className="wrapper-image">
           <img src={image} alt="Luciano Lima" className='rounded' />
         </div>
       </div>

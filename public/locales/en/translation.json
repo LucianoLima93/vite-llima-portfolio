@@ -10,7 +10,8 @@
   "menu": {
     "about": "About",
     "experience": "Experience",
-    "education": "Education",
+    "works": "Work",
+    "contact": "Contact",
     "resume": "Resume"
   },
   "localeLang": {
@@ -20,7 +21,8 @@
   "titles": {
     "about": "About Me",
     "experience": "Where I’ve Worked",
-    "education": "Education"
+    "works": "Work",
+    "contactme": "Get In Touch"
   },
   "jobs": [
     {

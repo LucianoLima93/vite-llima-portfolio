@@ -11,7 +11,7 @@ const Experience = () => {
   return (
     <section data-aos="fade-up"
       data-aos-duration='1500'
-      className="w-full max-w-[900px] ml-auto mr-32 py-28" id="jobs">
+      className="w-full max-w-[900px] ml-auto mr-32 py-28" id="experience">
       <Title title="experience"/>
       <div className="grid grid-cols-1/4 gap-8 mt-12">
         <div className="tab-jobs border-l-2 border-gray-800 w-max h-fit relative flex flex-col items-start justify-start">

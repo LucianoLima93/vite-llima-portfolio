@@ -1,6 +1,5 @@
 import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import SocialMedias from '../SocialMedias'
 import { useTranslation } from 'react-i18next'
 import Button from '../shared/Button'
 
@@ -8,8 +7,8 @@ const Introduction = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="w-full max-w-[900px] mx-auto h-screen">
-      <div className="pb-8 px-5 md:px-0 h-screen">
+    <section className="w-full max-w-[900px] mx-auto pt-12 h-[calc(100vh-160px)]">
+      <div className="pb-8 px-5 md:px-0 h-[calc(100vh-160px)]">
         <span className="text-base text-teal-300 mb-6 block" data-aos="fade-up"
           data-aos-delay="1500" data-aos-duration='800'>{t('homepage.introOne')}</span>
         <h1 className="font-semibold md:text-6xl text-3xl text-gray-200 mb-2 md:-ml-1"
@@ -26,8 +25,7 @@ const Introduction = () => {
             window.location.href = "mailto:luciano.g.lima93@gmail.com"
           }}
          label={'homepage.contact'}/>
-        <SocialMedias />
-        <div className='w-full flex justify-center mt-12 cursor-pointer'>
+        <div className='w-full flex justify-center items-center h-min35vh cursor-pointer'>
           <Button
             variant='rounded-full'
             icon={<FontAwesomeIcon icon={faAngleDown} className="text-teal-300 pt-1 md:text-[2em] text-[1.8em]" />}

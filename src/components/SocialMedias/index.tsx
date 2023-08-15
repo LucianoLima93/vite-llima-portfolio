@@ -1,9 +1,14 @@
 import { faGithub, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { twMerge } from 'tailwind-merge';
 
-const SocialMedias = () => {
+interface ISocialMediasProps extends React.HTMLAttributes<HTMLDivElement> {}
+
+const SocialMedias:React.FC<ISocialMediasProps> = ({...rest}) => {
   return (
-    <div className="flex gap-6 mt-12 ml-2" data-aos="fade-up" data-aos-duration='300' data-aos-delay="1500">
+    <div
+      {...rest}
+      className={twMerge('flex gap-6', rest.className)}>
       <a href="https://github.com/LucianoLima93" target="_blank">
         <FontAwesomeIcon icon={faGithub} className="text-slate-400 transition-all hover:text-teal-300 cursor-pointer md:text-[1.8em] text-[1.8em]" />
       </a>

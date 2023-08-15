@@ -30,7 +30,10 @@ const useHeader = ({headerRef}:IUseHeaderProps) => {
       name: 'experience'
     },
     {
-      name: 'education'
+      name: 'works'
+    },
+    {
+      name: 'contact'
     }
   ]
   return { menus, t };

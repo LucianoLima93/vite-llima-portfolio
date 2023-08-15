@@ -5,6 +5,7 @@ import { useRef } from 'react';
 import NavigationMobile from '../Navigation/NavigationMobile';
 import LocaleSwitcher from '../LocaleSwitcher';
 import Button from '../shared/Button';
+import SocialMedias from '../SocialMedias';
 
 const Header = () => {
   const headerRef = useRef<HTMLHeadingElement>(null);
@@ -14,7 +15,7 @@ const Header = () => {
     <>
       <NavigationMobile menus={menus}/>
       <header ref={headerRef}
-        className='transition-all bg-gray-900/75 backdrop-blur-sm fixed w-full md:px-14 px-3 mx-auto pt-2 pb-2 text-slate-50 flex justify-between items-center z-50'>
+        className='transition-all bg-gray-900/75 backdrop-blur-sm fixed w-full md:px-14 px-3 mx-auto pt-2 pb-2 text-slate-50 flex justify-between items-center z-40'>
         <Logo/>
         <div className='order-1 md:order-2 relative'>
           <div className="flex gap-x-8 w-full justify-end items-center cursor-pointer">
@@ -28,7 +29,10 @@ const Header = () => {
                 }}
               />
             </div>
-            <LocaleSwitcher animationDuration={1500} customClass='md:block hidden'/>
+            <SocialMedias className='md:flex hidden'
+              data-aos="fade-down" data-aos-duration='1500'
+              />
+            <LocaleSwitcher animationDuration={1600} customClass='md:block hidden'/>
           </div>
         </div>
       </header>

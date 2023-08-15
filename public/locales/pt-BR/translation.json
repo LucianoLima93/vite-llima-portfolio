@@ -10,7 +10,8 @@
   "menu": {
     "about": "Sobre",
     "experience": "Experiência",
-    "education": "Educação",
+    "works": "Projetos",
+    "contact": "Contato",
     "resume": "Currículo"
   },
   "localeLang": {
@@ -20,7 +21,8 @@
   "titles": {
     "about": "Sobre Mim",
     "experience": "Onde já trabalhei",
-    "education": "Educação"
+    "works": "Projetos",
+    "contactme": "Entre em contato comigo"
   },
   "jobs": [
     {

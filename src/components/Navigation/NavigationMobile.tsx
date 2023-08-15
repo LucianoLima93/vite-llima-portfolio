@@ -24,7 +24,7 @@ const NavigationMobile: React.FC<INavigationMobileProps> = ({ menus }) => {
       animate={isOpen ? "open" : "closed"}
       custom={height}
       ref={containerRef}
-      className="fixed left-0 bottom-0 w-72 z-10 md:hidden block"
+      className="fixed left-0 bottom-0 w-72 z-50 md:hidden block"
     >
       <motion.div className="absolute top-0 left-0 bottom-0 w-72 bg-teal-300"
         variants={sidebarVariants} />
