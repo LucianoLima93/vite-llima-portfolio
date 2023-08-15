@@ -9,6 +9,7 @@ const Logo:React.FC<LogoProps> = ({animation='initializing'}) => {
   return (
     <div className='hover:scale-110 transition-all duration-200 order-2 md:order-1'>
       <div
+        data-aos-once="false"
         data-aos={animation === 'initializing' ? 'zoom-in' : ''}
         data-aos-duration={animation === 'initializing' ? '1500' : ''}
         data-aos-easing={animation === 'initializing' ? 'ease-in-out' : ''}

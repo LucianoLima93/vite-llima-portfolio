@@ -1,16 +1,20 @@
 import Logo from '../Logo';
 import useHeader from './useheader';
 import Navigation from '../Navigation';
+import { useRef } from 'react';
 import NavigationMobile from '../Navigation/NavigationMobile';
 import LocaleSwitcher from '../LocaleSwitcher';
 import Button from '../shared/Button';
 
 const Header = () => {
-  const { menus } = useHeader();
+  const headerRef = useRef<HTMLHeadingElement>(null);
+  const { menus } = useHeader({headerRef});
+
   return (
     <>
       <NavigationMobile menus={menus}/>
-      <header className='md:sticky shadow-lg shadow-gray-900 transition-all bg-gray-900/75 backdrop-blur-sm fixed top-0 w-full md:px-14 px-3 mx-auto md:mt-8 pt-2 pb-2 text-slate-50 flex justify-between items-center'>
+      <header ref={headerRef}
+        className='transition-all bg-gray-900/75 backdrop-blur-sm fixed w-full md:px-14 px-3 mx-auto pt-2 pb-2 text-slate-50 flex justify-between items-center z-50'>
         <Logo/>
         <div className='order-1 md:order-2 relative'>
           <div className="flex gap-x-8 w-full justify-end items-center cursor-pointer">

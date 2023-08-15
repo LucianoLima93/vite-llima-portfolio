@@ -38,7 +38,7 @@ function App() {
     ):(
       <>
         <Header/>
-        <main className="flex flex-col justify-between h-screen w-full max-w-[88rem] mx-auto md:mt-24 mt-4 text-slate-50">
+        <main className="flex flex-col justify-between h-screen w-full max-w-[88rem] mx-auto md:mt-40 mt-4 text-slate-50">
           <Introduction />
           <div>
             <About />

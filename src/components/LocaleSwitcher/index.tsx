@@ -5,7 +5,8 @@ const LocaleSwitcher:React.FC<LocaleSwitcherProps> = ({customClass, animationDur
   
   return (
     <div className={`${customClass}`}
-    data-aos="fade-down" data-aos-duration={`${animationDuration}`}>
+    data-aos="fade-down" data-aos-duration={`${animationDuration}`}
+    >
       <select name="locale-switcher" id="locale-switcher"
       defaultValue={language}
       className="bg-transparent text-gray-950 font-medium md:text-slate-50 text-base outline-none cursor-pointer"
