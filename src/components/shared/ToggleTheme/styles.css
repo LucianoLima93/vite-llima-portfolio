@@ -1,6 +1,6 @@
 .toggle-theme {
   --toggle-size: 1.4rem;
-  @apply appearance-none outline-none cursor-pointer transition-all duration-500 text-gray-200 rounded-full;
+  @apply appearance-none outline-none cursor-pointer transition-all duration-500 text-gray-950 rounded-full;
   width: var(--toggle-size);
   height: var(--toggle-size);
   box-shadow: inset calc(var(--toggle-size) * 0.33) calc(var(--toggle-size) * -0.25) 0;

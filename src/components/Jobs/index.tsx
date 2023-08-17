@@ -14,10 +14,11 @@ const Experience = () => {
       className="w-full max-w-[900px] ml-auto mr-32 py-28" id="experience">
       <Title title="experience"/>
       <div className="grid grid-cols-1/4 gap-8 mt-12">
-        <div className="tab-jobs border-l-2 border-gray-800 w-max h-fit relative flex flex-col items-start justify-start">
+        <div className="tab-jobs border-l-2 dark:border-gray-800 w-max h-fit relative flex flex-col items-start justify-start">
           {allTabs.map((tab, index) => (
             <button role="tab" id={`tabJob${index}`} tabIndex={index} key={index} onClick={(e) => switchTab(e, tab.name)}
-              className="tab-jobs-links h-10 px-6 hover:bg-gray-800 w-full text-left transition-all text-sm font-light hover:text-teal-300">
+              className={`tab-jobs-links h-10 px-6 dark:hover:bg-gray-800 hover:bg-gray-200 text-sm dark:hover:text-teal-300
+              hover:text-teal-500 w-full text-left transition-all`}>
               {tab.label}
             </button>
           ))}

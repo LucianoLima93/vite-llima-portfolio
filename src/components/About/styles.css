@@ -1,24 +1,26 @@
 .wrapper-image {
-  @apply relative w-full transition-all duration-300 ease-in-out mix-blend-screen;
+  @apply relative w-full transition-all duration-300 ease-in-out dark:mix-blend-screen rounded;
   filter: grayscale(100%) contrast(1);
 }
-.wrapper-image::before, .wrapper-image::after {
-  @apply w-full h-full absolute -z-[1] border-solid border-2 border-teal-500 transition-all;
+.wrapper-image::before {
+  @apply w-full h-full absolute -z-[1] border-solid border-2 border-teal-500 transition-all rounded;
   content: "";
 }
 .wrapper-image::before {
   @apply bg-teal-500 -top-4 -left-4;
 }
-.wrapper-image::after {
-  @apply -bottom-4 -right-4
-}
 .wrapper-image:hover::before {
-  @apply top-4 left-4
+  @apply top-3 left-4
 }
-.wrapper-image:hover::after {
-  @apply bottom-4 right-4
+.wrapper-image:hover{
+  @apply filter-none mix-blend-normal;
 }
 
-.wrapper-image:hover{
+.wrapper-image-project {
+  @apply relative w-max h-full transition-all duration-300 ease-in-out dark:mix-blend-screen rounded-lg;
+  filter: grayscale(100%) contrast(1);
+}
+
+.wrapper-image-project:hover{
   @apply filter-none mix-blend-normal;
 }

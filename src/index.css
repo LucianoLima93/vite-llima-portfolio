@@ -11,7 +11,7 @@ main {
   counter-reset: section 0;
 }
 body {
-  @apply bg-gray-900 selection:bg-teal-500 selection:text-gray-900;
+  @apply dark:bg-gray-950 bg-gray-100 dark:text-gray-50 text-gray-950 selection:bg-teal-500 selection:text-gray-900 dark:font-normal font-medium;
 }
 
 .high-lighter {
@@ -19,13 +19,13 @@ body {
 }
 @layer components {
   .active-tab {
-    @apply bg-gray-800 text-teal-300;
+    @apply dark:bg-gray-800 bg-gray-200 dark:text-teal-300 text-teal-500;
   }
   .content-empty {
     content: '';
   }
   .before-counter-increment {
-    @apply relative bottom-1 mr-2 text-teal-300 text-xl font-medium;
+    @apply relative bottom-1 mr-2 dark:text-teal-300 text-teal-500 text-xl font-medium;
     counter-increment: section 1;
     content: "0" counter(section) "."
   }

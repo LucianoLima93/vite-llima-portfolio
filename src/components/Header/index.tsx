@@ -15,7 +15,7 @@ const Header = () => {
     <>
       <NavigationMobile menus={menus}/>
       <header ref={headerRef}
-        className='transition-all bg-gray-900/75 backdrop-blur-sm fixed w-full md:px-14 px-3 mx-auto pt-2 pb-2 text-slate-50 flex justify-between items-center z-40'>
+        className='transition-all dark:bg-gray-950/75 bg-gray-100/75 backdrop-blur-sm fixed w-full md:px-14 px-3 mx-auto pt-2 pb-2 dark:text-gray-50 text-gray-900 flex justify-between items-center z-40'>
         <Logo/>
         <div className='order-1 md:order-2 relative'>
           <div className="flex gap-x-8 w-full justify-end items-center cursor-pointer">
