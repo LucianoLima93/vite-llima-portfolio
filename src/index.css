@@ -21,7 +21,7 @@ body {
   .active-tab {
     @apply bg-gray-800 text-teal-300;
   }
-  .before-after-content {
+  .content-empty {
     content: '';
   }
   .before-counter-increment {

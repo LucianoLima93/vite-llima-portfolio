@@ -17,7 +17,7 @@ const useHeader = ({headerRef}:IUseHeaderProps) => {
       } else if (visible && scroll.y === 0) {
         headerRef.current.style.top = '16px';
       } else {
-        headerRef.current.style.top = '4px';
+        headerRef.current.style.top = '0px';
       } 
     }
   }, [visible, scroll.y]);

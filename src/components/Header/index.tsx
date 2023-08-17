@@ -5,7 +5,7 @@ import { useRef } from 'react';
 import NavigationMobile from '../Navigation/NavigationMobile';
 import LocaleSwitcher from '../LocaleSwitcher';
 import Button from '../shared/Button';
-import SocialMedias from '../SocialMedias';
+import ToggleTheme from '../shared/ToggleTheme';
 
 const Header = () => {
   const headerRef = useRef<HTMLHeadingElement>(null);
@@ -29,9 +29,7 @@ const Header = () => {
                 }}
               />
             </div>
-            <SocialMedias className='md:flex hidden'
-              data-aos="fade-down" data-aos-duration='1500'
-              />
+            <ToggleTheme/>
             <LocaleSwitcher animationDuration={1600} customClass='md:block hidden'/>
           </div>
         </div>

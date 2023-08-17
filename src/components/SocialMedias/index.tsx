@@ -8,15 +8,16 @@ const SocialMedias:React.FC<ISocialMediasProps> = ({...rest}) => {
   return (
     <div
       {...rest}
-      className={twMerge('flex gap-6', rest.className)}>
+      className={twMerge(`flex flex-col gap-6 fixed bottom-0 left-14
+      after:block after:w-[1px] after:h-24 after:my-0 after:mx-auto after:bg-gray-400`, rest.className)}>
       <a href="https://github.com/LucianoLima93" target="_blank">
-        <FontAwesomeIcon icon={faGithub} className="text-slate-400 transition-all hover:text-teal-300 cursor-pointer md:text-[1.8em] text-[1.8em]" />
+        <FontAwesomeIcon icon={faGithub} className="text-gray-400 transition-all hover:text-teal-300 hover:-translate-y-1 cursor-pointer md:text-[1.4em] text-[1.8em]" />
       </a>
       <a href="https://www.linkedin.com/in/luciano-lima-144137150/" target="_blank">
-        <FontAwesomeIcon icon={faLinkedin} className="text-slate-400 transition-all hover:text-teal-300 cursor-pointer md:text-[1.8em] text-[1.8em]" />
+        <FontAwesomeIcon icon={faLinkedin} className="text-gray-400 transition-all hover:text-teal-300 hover:-translate-y-1 cursor-pointer md:text-[1.4em] text-[1.8em]" />
       </a>
       <a href="https://www.instagram.com/_lucianolima93/" target="_blank">
-        <FontAwesomeIcon icon={faInstagram} className="text-slate-400 transition-all hover:text-teal-300 cursor-pointer md:text-[1.8em] text-[1.8em]" />
+        <FontAwesomeIcon icon={faInstagram} className="text-gray-400 transition-all hover:text-teal-300 hover:-translate-y-1 cursor-pointer md:text-[1.4em] text-[1.8em]" />
       </a>
     </div>
   )
