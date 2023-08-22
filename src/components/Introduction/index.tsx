@@ -7,8 +7,8 @@ const Introduction = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="w-full max-w-[900px] mx-auto pt-12 h-[calc(100vh-160px)]">
-      <div className="pb-8 px-5 md:px-0 h-[calc(100vh-160px)]">
+    <section className="w-full max-w-[900px] mx-auto pt-32 md:pt-12 h-[calc(100vh-160px)]">
+      <div className="pb-8 px-5 h-[calc(100vh-160px)]">
         <span className="dark:text-teal-300 text-teal-500 mb-6 block" data-aos="fade-up"
           data-aos-delay="1500" data-aos-duration='800'>{t('homepage.introOne')}</span>
         <h1 className="font-semibold md:text-6xl text-3xl dark:text-gray-200 text-gray-700 mb-2 md:-ml-1"

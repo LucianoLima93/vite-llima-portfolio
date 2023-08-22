@@ -17,7 +17,7 @@
 }
 
 .wrapper-image-project {
-  @apply relative w-max h-full transition-all duration-300 ease-in-out dark:mix-blend-screen rounded-lg;
+  @apply relative h-full transition-all duration-300 ease-in-out dark:mix-blend-screen rounded-lg;
   filter: grayscale(100%) contrast(1);
 }
 

@@ -45,8 +45,8 @@ function App() {
             <Works />
             <ContactMe />
           </div>
-          <SocialMedias />
-          <div className={`flex flex-col gap-6 fixed bottom-0 right-14
+          <SocialMedias className='hidden xl:flex' />
+          <div className={`xl:flex hidden flex-col gap-6 fixed bottom-0 right-14
       after:block after:w-[1px] after:h-24 after:my-0 after:mx-auto after:bg-gray-400`}>
             <a style={{writingMode: 'vertical-rl'}}
             className='dark:text-gray-300 text-gray-800 transition-all text-sm dark:font-light font-normal tracking-wider dark:hover:text-teal-300 hover:text-teal-500 hover:-translate-y-1 cursor-pointer'

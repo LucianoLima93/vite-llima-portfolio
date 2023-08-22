@@ -1,28 +1,28 @@
 {
   "homepage": {
-    "introOne": "Olá, meu nome é",
-    "introTwo": "Eu construo produtos para a web",
-    "introThree": "",
-    "introFour": "Desenvolvedor Front End",
-    "introFive": " especializado em construir produtos web de alta qualidade e excepcional experiência para o usuário.",
-    "contact": "Entre em contato"
+    "introOne": "Hi, my name is",
+    "introTwo": "I build products for the web",
+    "introThree": "I'm a ",
+    "introFour": "Front-end Developer ",
+    "introFive": "specializing in building (and occasionally designing) exceptional websites and everything in between.",
+    "contact": "Get In Touch"
   },
   "menu": {
-    "about": "Sobre",
-    "experience": "Experiência",
-    "works": "Projetos",
-    "contact": "Contato",
-    "resume": "Currículo"
+    "about": "About",
+    "experience": "Experience",
+    "works": "Work",
+    "contact": "Contact",
+    "resume": "Resume"
   },
   "localeLang": {
-    "en": "Inglês",
-    "pt-BR": "Português"
+    "en": "English",
+    "pt-BR": "Portuguese"
   },
   "titles": {
-    "about": "Sobre Mim",
-    "experience": "Onde já trabalhei",
-    "works": "Projetos",
-    "contactme": "Entre em contato comigo"
+    "about": "About Me",
+    "experience": "Where I’ve Worked",
+    "works": "Work",
+    "contactme": "Get In Touch"
   },
   "jobs": [
     {
@@ -79,7 +79,6 @@
     }
   ],
   "root": {
-    "usedTechnologies": "Habilidades e competências desenvolvidas",
-    "contact": "Entre em contato comigo"
+    "usedTechnologies": "Habilidades e competências desenvolvidas"
   }
 }

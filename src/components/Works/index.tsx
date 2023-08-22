@@ -8,11 +8,11 @@ const Works = () => {
   return (
     <section data-aos="fade-up"
       data-aos-duration='1500'
-      className='w-fit max-w-[900px] mx-auto py-28' id='works'>
+      className='w-fit max-w-[900px] mx-auto py-28 px-5' id='works'>
       <Title title='works' />
       <div className='flex flex-col-reverse p-2 mt-12 dark:bg-gray-900/30 bg-gray-900/5 rounded-2xl'>
-        <div className='wrapper-image-project'>
-          <img src={image} className='rounded-md' alt="Portfolio" />
+        <div className='wrapper-image-project w-full max-w-[900px]'>
+          <img src={image} className='rounded-md w-full' alt="Portfolio" />
         </div>
         <div className='py-4 ml-4 pr-4 flex flex-col justify-between'>
           <div>

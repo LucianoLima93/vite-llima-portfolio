@@ -1,13 +1,14 @@
 import { faDiamond } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { twMerge } from 'tailwind-merge';
 
-interface LogoProps {
+interface LogoProps extends React.HTMLAttributes<HTMLDivElement> {
   animation?: 'loading' | 'initializing';
 };
 
-const Logo:React.FC<LogoProps> = ({animation='initializing'}) => {
+const Logo:React.FC<LogoProps> = ({animation='initializing', ...rest}) => {
   return (
-    <div className='hover:scale-110 transition-all duration-200 order-2 md:order-1'>
+    <div {...rest} className={twMerge(`hover:scale-110 transition-all duration-200`, rest.className)}>
       <div
         data-aos-once="false"
         data-aos={animation === 'initializing' ? 'zoom-in' : ''}

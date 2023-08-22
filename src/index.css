@@ -29,6 +29,10 @@ body {
     counter-increment: section 1;
     content: "0" counter(section) "."
   }
+  .before-counter-increment-without-style {
+    counter-increment: section 1;
+    content: "0" counter(section) ".";
+  }
   .after-numbered-heading {
     @apply block relative -top-1 w-72 h-[1px] ml-5 bg-gray-700;
     content: '';

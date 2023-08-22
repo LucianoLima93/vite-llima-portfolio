@@ -11,13 +11,14 @@ const Experience = () => {
   return (
     <section data-aos="fade-up"
       data-aos-duration='1500'
-      className="w-full max-w-[900px] ml-auto mr-32 py-28" id="experience">
+      className="w-full max-w-[900px] ml-auto lg:mr-32 mr-auto py-28 px-5" id="experience">
       <Title title="experience"/>
-      <div className="grid grid-cols-1/4 gap-8 mt-12">
-        <div className="tab-jobs border-l-2 dark:border-gray-800 w-max h-fit relative flex flex-col items-start justify-start">
+      <div className="xl:grid xl:grid-cols-1/4 flex flex-col gap-8 mt-12">
+        <div className={`tab-jobs border-l-2 dark:border-gray-800 md:w-max h-fit w-full
+          relative md:overflow-auto overflow-scroll overflow-y-hidden flex xl:flex-col items-start justify-start`}>
           {allTabs.map((tab, index) => (
             <button role="tab" id={`tabJob${index}`} tabIndex={index} key={index} onClick={(e) => switchTab(e, tab.name)}
-              className={`tab-jobs-links h-10 px-6 dark:hover:bg-gray-800 hover:bg-gray-200 text-sm dark:hover:text-teal-300
+              className={`tab-jobs-links whitespace-nowrap h-10 px-6 dark:hover:bg-gray-800 hover:bg-gray-200 text-sm dark:hover:text-teal-300
               hover:text-teal-500 w-full text-left transition-all`}>
               {tab.label}
             </button>
