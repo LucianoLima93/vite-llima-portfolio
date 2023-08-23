@@ -40,11 +40,8 @@ const useJobs = ({ highLighter }: IUseJobs) => {
         position: 'position',
         link: 'link',
         company: 'company',
-        description: [
-          'description',
-          'description'
-        ],
-        technologies: ['technologies', 'technologies', 'technologies', 'technologies'],
+        description: new Array(2).fill('description'),
+        technologies: new Array(4).fill('technologies'),
         period: 'period'
       }
     },
@@ -54,8 +51,8 @@ const useJobs = ({ highLighter }: IUseJobs) => {
         position: 'position',
         link: 'link',
         company: 'company',
-        description: ['description', 'description', 'description', 'description'],
-        technologies: ['technologies', 'technologies', 'technologies', 'technologies'],
+        description: new Array(4).fill('description'),
+        technologies: new Array(4).fill('technologies'),
         period: 'period'
       }
     },
@@ -65,8 +62,8 @@ const useJobs = ({ highLighter }: IUseJobs) => {
         position: 'position',
         link: 'link',
         company: 'company',
-        description: ['description', 'description', 'description'],
-        technologies: ['technologies', 'technologies', 'technologies', 'technologies'],
+        description: new Array(3).fill('description'),
+        technologies: new Array(4).fill('technologies'),
         period: 'period'
       }
     }

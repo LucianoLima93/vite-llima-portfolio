@@ -24,6 +24,17 @@
     "works": "Projetos",
     "contactme": "Entre em contato comigo"
   },
+  "about": {
+    "technologies": [
+      "JavaScript (ES6+)",
+      "TypeScript",
+      "React",
+      "Vitest",
+      "Tailwind CSS"
+    ],
+    "subtitle": "Aqui estão algumas tecnologias com as quais tenho trabalhado recentemente:",
+    "description": "Olá, meu nome é Luciano, trabalho com desenvolvimento desde 2017, mas meu interesse com desenvolvimento web iniciou-se em 2019, quando após ser aprovado em uma seleção interna para um novo projeto de desenvolvimento web com <b class='text-teal-500'>Vue</b>, comecei a estudar e me aprofuntar mais em <b class ='text-teal-500'>HTML</b>, <b class='text-teal-500'>CSS</b> e <b class='text-teal-500'>JavaScript</b>.<br /><br />Desde então, venho estudando e me aperfeiçoando cada vez mais, buscando sempre aprender novas tecnologias e metodologias de desenvolvimento.<br />Atualmente, desenvolvo aplicações web com <b class='text-teal-500'>React</b>"
+  },
   "jobs": [
     {
       "position": "Desenvolvedor Front End Pleno na",
@@ -78,6 +89,16 @@
       ]
     }
   ],
+  "contatcme": {
+    "titleOne": "Atualmente estou em busca de novas oportunidades de emprego. Entre em contato comigo via ",
+    "titleTwo": " que responderei o mais breve possível.",
+    "email": "email"
+  },
+  "footer": {
+    "inspiration": "Inspirado no site de ",
+    "author": "Brittany Chiang",
+    "developed": "Desenvolvido por Luciano Lima."
+  },
   "root": {
     "usedTechnologies": "Habilidades e competências desenvolvidas",
     "contact": "Entre em contato comigo"

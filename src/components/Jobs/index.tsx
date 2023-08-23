@@ -23,7 +23,7 @@ const Experience = () => {
               {tab.label}
             </button>
           ))}
-          <div ref={highLighter} className="h-10 w-[2px] bg-teal-500 top-0 -left-[2px] absolute z-10 high-lighter"/>
+          <div ref={highLighter} className="h-10 w-[2px] bg-teal-500 dark:bg-teal-300 top-0 -left-[2px] absolute z-10 high-lighter"/>
         </div>
         <Content jobs={jobs}/>
       </div>

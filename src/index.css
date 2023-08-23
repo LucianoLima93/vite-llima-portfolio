@@ -25,7 +25,7 @@ body {
     content: '';
   }
   .before-counter-increment {
-    @apply relative bottom-1 mr-2 dark:text-teal-300 text-teal-500 text-xl font-medium;
+    @apply relative bottom-1 mr-2 dark:text-teal-300 text-teal-500 text-base md:text-xl font-medium;
     counter-increment: section 1;
     content: "0" counter(section) "."
   }

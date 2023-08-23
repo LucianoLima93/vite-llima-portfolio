@@ -8,19 +8,19 @@ const Works = () => {
   return (
     <section data-aos="fade-up"
       data-aos-duration='1500'
-      className='w-fit max-w-[900px] mx-auto py-28 px-5' id='works'>
+      className='md:w-fit w-full max-w-[900px] mx-auto py-28 px-5' id='works'>
       <Title title='works' />
       <div className='flex flex-col-reverse p-2 mt-12 dark:bg-gray-900/30 bg-gray-900/5 rounded-2xl'>
         <div className='wrapper-image-project w-full max-w-[900px]'>
           <img src={image} className='rounded-md w-full' alt="Portfolio" />
         </div>
-        <div className='py-4 ml-4 pr-4 flex flex-col justify-between'>
-          <div>
-            <span className='dark:text-teal-300 text-sm font-medium mb-2'>Projeto em Destaque</span>
-            <h1 className='text-2xl font-semibold mb-4'>Personal Web Site</h1>
+        <div className='py-4 md:ml-4 px-4 flex flex-col justify-between w-full'>
+          <div className='flex flex-col'>
+            <span className='dark:text-teal-300 text-sm font-medium mb-2 w-full'>Projeto em Destaque</span>
+            <h1 className='text-2xl font-semibold mb-4 w-full'>Personal Web Site</h1>
             <p className='dark:text-gray-300 rounded font-light'>Projeto pessoal criado como currículo e portfolio onde falo um pouco sobre mim e demonstro minhas habilidades e competencia como desenvolvedor</p>
           </div>
-          <div>
+          <div className='flex flex-col'>
             <ul className='flex gap-2 text-sm dark:text-teal-300 mb-4'>
               <li>React</li>
               <li>Vite</li>

@@ -1,5 +1,5 @@
 .wrapper-image {
-  @apply relative w-full transition-all duration-300 ease-in-out dark:mix-blend-screen rounded;
+  @apply relative w-full h-fit transition-all duration-300 ease-in-out dark:mix-blend-screen rounded;
   filter: grayscale(100%) contrast(1);
 }
 .wrapper-image::before {
