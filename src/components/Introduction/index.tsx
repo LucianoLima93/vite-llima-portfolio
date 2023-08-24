@@ -14,11 +14,11 @@ const Introduction = () => {
           data-aos-delay="1500" data-aos-duration='800'>
           {t('homepage.introOne')}
         </span>
-        <h1 className="font-semibold md:text-6xl text-3xl dark:text-gray-200 text-gray-700 mb-2 md:-ml-1"
+        <h1 className="font-semibold md:text-6xl text-3xl dark:text-gray-200 text-gray-800 mb-2 md:-ml-1"
           data-aos-delay="1500" data-aos="fade-up" data-aos-duration='700'>
           Luciano Lima.
         </h1>
-        <h2 className="font-semibold md:text-6xl text-3xl dark:text-gray-400 text-gray-500 mb-6 md:-ml-1"
+        <h2 className="font-semibold md:text-6xl text-3xl dark:text-gray-400 text-gray-700 mb-6 md:-ml-1"
           data-aos-delay="1500" data-aos="fade-up" data-aos-duration='600'>
           {t('homepage.introTwo')}
         </h2>

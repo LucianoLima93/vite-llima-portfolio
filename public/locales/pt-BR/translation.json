@@ -96,7 +96,7 @@
     "technologies": [
       "React",
       "Vite",
-      "Tailwind CSS",
+      "Tailwind",
       "Vitest",
       "Storybook"
     ]

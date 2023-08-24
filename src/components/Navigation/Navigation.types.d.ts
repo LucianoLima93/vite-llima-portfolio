@@ -5,10 +5,6 @@ interface INavigationProps extends React.HTMLAttributes<HTMLDivElement> {
   menus: NavigationMenu[];
 };
 
-interface IMenuToggleProps {
-  toggle: () => void;
-}
-
-interface INavigationMobileProps {
-  menus: NavigationMenu[];
+interface IMenuToggleProps extends React.HTMLAttributes<HTMLButtonElement> {
+  refButton: React.RefObject<HTMLButtonElement>;
 }

@@ -1,47 +1,41 @@
-'use client';
 import React, { useRef } from 'react'
-import { motion, useCycle } from "framer-motion";
 import useNavigation from './useNavigation';
-import { useDimensions } from '../../hooks/useDimensions';
 import MenuToggle from './MenuToggle';
+import { twMerge } from 'tailwind-merge';
 import Button from '../shared/Button';
-import useHeader from '../Header/useheader';
 
-const NavigationMobile: React.FC<INavigationMobileProps> = ({ menus }) => {
-  const containerRef = useRef<HTMLElement>(null);
-  const { ulVariants, itemVariants, sidebarVariants, t } = useNavigation();
-  const [isOpen, toggleOpen] = useCycle(false, true);
-  const { height } = useDimensions(containerRef);
-  useHeader({ headerRef: containerRef });
+const NavigationMobile: React.FC<INavigationProps> = ({ menus, ...rest }) => {
+  const menuToggleRef = useRef<HTMLButtonElement>(null);
+  const asideRef = useRef<HTMLHeadingElement>(null);
+  const { t, navigateToComponent, setIsOpen, isOpen } = useNavigation(menuToggleRef, asideRef);
 
   return (
-    <motion.nav
-      initial={false}
-      animate={isOpen ? "open" : "closed"}
-      custom={height}
-      ref={containerRef}
-      className="fixed left-0 bottom-0 w-72 z-50 md:hidden block"
-    >
-      <motion.div className="absolute top-0 left-0 bottom-0 w-72 bg-teal-300"
-        variants={sidebarVariants} />
-      <motion.ul variants={ulVariants} className='absolute top-24 w-full px-6 pt-4 flex flex-col gap-4 h-full'>
-        {menus.map((menu: NavigationMenu) => (
-          <motion.li variants={itemVariants} key={menu.name} className='font-bold text-base'>
-            {t(`menu.${menu.name}`)}
-          </motion.li>
-        ))}
-        <motion.div variants={itemVariants} className='flex flex-col gap-4 mt-6'>
-          <Button
-            label='menu.resume'
-            onClick={() => {
-              window.open('../../../public/assets/resume.pdf', '_blank');
-            }}
-          />
-          {/* <LocaleSwitcher /> */}
-        </motion.div>
-      </motion.ul>
-      <MenuToggle toggle={() => toggleOpen()} />
-    </motion.nav>
+    <nav {...rest} className={twMerge('flex', rest.className)}>
+      <MenuToggle refButton={menuToggleRef} className='z-20' onClick={() => {
+        setIsOpen(!isOpen);
+      }} />
+      <aside ref={asideRef}
+      className={`z-10 translate-x-0 visible flex items-center justify-center fixed -top-4 bottom-0 right-0 py-12 px-2 
+      w-min75vw h-screen outline-0 bg-teal-500 dark:bg-teal-300 transition-all`}>
+        <ul className='flex flex-col gap-4'>
+          {menus.map((menu: NavigationMenu) => (
+            <li key={menu.name}
+              onClick={() => {
+                setIsOpen(!isOpen);
+                navigateToComponent(menu.name);
+              }}
+              className='font-semibold text-base text-gray-950 text-center'>
+              {t(`menu.${menu.name}`)}
+            </li>
+          ))}
+          <a href={`${import.meta.env.BASE_URL}resume.pdf`} target="_blank" rel="noopener noreferrer" type="application/pdf">
+            <Button variant='secondary'
+              label='menu.resume'
+            />
+          </a>
+        </ul>
+      </aside>
+    </nav>
   )
 }
 

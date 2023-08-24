@@ -16,7 +16,7 @@ const ContentItem: React.FC<IContentItem> = ({ job, index }) => {
           </span>
         </span>
         <span className="text-sm dark:text-gray-300 text-gray-700 mb-6">{t(`jobs.${index}.period`)}</span>
-        <ul role='list' className="list-disc dark:marker:text-teal-300 marker:text-teal-500 mb-6">
+        <ul role='list' className="list-disc dark:marker:text-teal-300 marker:text-teal-500 mb-6 mr-4">
           {job.description && job.description.map((desc, idxDesc) => (
             <React.Fragment key={idxDesc}>
               <li className="text-base">{t(`jobs.${index}.${desc}.${idxDesc}`)}</li>

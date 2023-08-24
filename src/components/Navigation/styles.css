@@ -1,0 +1,37 @@
+.menu-toggle-bar1, .menu-toggle-bar2, .menu-toggle-bar3 {
+  @apply h-0.5 mb-1.5 dark:bg-teal-300 bg-gray-950;
+  transition: all 0.4s;
+}
+.menu-toggle-bar1 {
+  @apply w-8;
+}
+.menu-toggle-bar2 {
+  @apply w-6;
+}
+.menu-toggle-bar3 {
+  @apply w-4;
+}
+
+.menu-toggle-change .menu-toggle-bar1 {
+  @apply bg-gray-950;
+  transform: translate(0, 11px) rotate(-45deg);
+}
+
+.menu-toggle-change .menu-toggle-bar2 {
+  @apply opacity-0;
+}
+
+.menu-toggle-change .menu-toggle-bar3 {
+  @apply w-8 bg-gray-950;
+  transform: translate(0, -5px) rotate(45deg);
+}
+body.body-blur-overflow-effect main > * {
+  filter: blur(5px) brightness(0.7);
+  pointer-events: none;
+  user-select: none;
+  @apply transition-all;
+}
+
+.aside-toggle-menu {
+  @apply invisible translate-x-full;
+}
