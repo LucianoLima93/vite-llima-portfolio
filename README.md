@@ -19,13 +19,13 @@ Para rodar o projeto, siga os passos abaixo:
 2. Clone o repositório do projeto:
 
    ```bash
-   git clone url-do-projeto
+   git clone https://github.com/LucianoLima93/vite-llima-portfolio.git
    ```
 
 3. Acesse o diretório do projeto:
 
    ```bash
-   cd nome-do-projeto
+   cd vite-llima-portfolio
    ```
 
 4. Instale as dependências do projeto:
