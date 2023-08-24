@@ -34,7 +34,13 @@ Para rodar o projeto, siga os passos abaixo:
    npm install
    ```
 
-5. Inicie o servidor de desenvolvimento:
+5. Instale os husky
+
+   ```bash
+   npm run prepare
+   ```
+
+6. Inicie o servidor de desenvolvimento:
 
    ```bash
    npm run dev
