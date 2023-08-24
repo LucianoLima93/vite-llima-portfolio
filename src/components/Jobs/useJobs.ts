@@ -3,12 +3,12 @@ import { useEffect } from "react";
 const useJobs = ({ highLighter }: IUseJobs) => {
   const switchTab = (event: React.MouseEvent, tabName: string): void => {
     event.preventDefault();
-    let tabcontent: HTMLCollectionOf<Element> = document.getElementsByClassName("tabcontent");
+    const tabcontent: HTMLCollectionOf<Element> = document.getElementsByClassName("tabcontent");
     Array.from(tabcontent).forEach((element: Element) => {
       (element as HTMLElement).style.display = "none";
     });
 
-    let tablinks: HTMLCollectionOf<Element> = document.getElementsByClassName("tab-jobs-links");
+    const tablinks: HTMLCollectionOf<Element> = document.getElementsByClassName("tab-jobs-links");
     Array.from(tablinks).forEach((element: Element) => {
       (element as HTMLElement).className = (element as HTMLElement).className.replace(" active-tab", "");
     });

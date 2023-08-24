@@ -1,4 +1,4 @@
-import React, { ButtonHTMLAttributes, ElementType } from "react";
+import React, { ButtonHTMLAttributes } from "react";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   icon?: React.ReactNode | null;
