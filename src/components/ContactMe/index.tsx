@@ -8,11 +8,14 @@ const ContactMe = () => {
     <SectionWrapper title='contactme' id='contact'>
       <div className='my-12'>
         <p className='mb-12'>{t('contatcme.titleOne')}
-        <a href="mailto:luciano.g.lima93@gmail.com"
-          className='dark:text-teal-300 text-teal-500 underline'>{t('contatcme.email')}</a>
+          <a href="mailto:luciano.g.lima93@gmail.com"
+            className='dark:text-teal-300 text-teal-500 underline'>{t('contatcme.email')}</a>
           {t('contatcme.titleTwo')}
         </p>
-        <Button variant='outlined' label='root.contact'/>
+        <Button onClick={() => {
+          window.location.href = "mailto:luciano.g.lima93@gmail.com"
+        }}
+          variant='outlined' label='root.contact' />
       </div>
     </SectionWrapper>
   )
