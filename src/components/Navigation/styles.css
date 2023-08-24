@@ -25,12 +25,6 @@
   @apply w-8 bg-gray-950;
   transform: translate(0, -5px) rotate(45deg);
 }
-body.body-blur-overflow-effect main > * {
-  filter: blur(5px) brightness(0.7);
-  pointer-events: none;
-  user-select: none;
-  @apply transition-all;
-}
 
 .aside-toggle-menu {
   @apply invisible translate-x-full;

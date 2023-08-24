@@ -10,6 +10,7 @@ html {
 main {
   counter-reset: section 0;
 }
+
 body {
   @apply dark:bg-gray-950 bg-gray-100 dark:text-gray-50 text-gray-950 selection:bg-teal-500 selection:text-gray-900 dark:font-normal font-medium;
 }
@@ -17,6 +18,18 @@ body {
 .high-lighter {
   transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1) 0.1s;
 }
+
+body.body-blur-overflow-effect main > * {
+  filter: blur(5px) brightness(0.7);
+  pointer-events: none;
+  user-select: none;
+  @apply transition-all;
+}
+
+.body-blur-overflow-effect {
+  overflow: hidden;
+}
+
 @layer components {
   .active-tab {
     @apply dark:bg-gray-800 bg-gray-200 dark:text-teal-300 text-teal-500;
