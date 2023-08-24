@@ -8,3 +8,7 @@ interface INavigationProps extends React.HTMLAttributes<HTMLDivElement> {
 interface IMenuToggleProps {
   toggle: () => void;
 }
+
+interface INavigationMobileProps {
+  menus: NavigationMenu[];
+}

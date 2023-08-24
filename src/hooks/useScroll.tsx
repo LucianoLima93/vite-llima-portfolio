@@ -6,10 +6,12 @@ const useScroll = () => {
   const [visible, setVisible] = useState(true);
 
   const onScroll = useCallback(() => {
-    const currentScrollY = window.scrollY;
-    setVisible(prevScrollY >= currentScrollY ? true : false);
-    setScroll({ x: window.scrollX, y: window.scrollY });
-    setPrevScrollY(currentScrollY);
+    setTimeout(() => {
+      const currentScrollY = window.scrollY;
+      setVisible(prevScrollY >= currentScrollY ? true : false);
+      setScroll({ x: window.scrollX, y: window.scrollY });
+      setPrevScrollY(currentScrollY);
+    }, 500);
   }, [scroll]);
 
   useEffect(() => {

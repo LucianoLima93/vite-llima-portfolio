@@ -1,4 +1,3 @@
-// import { useTranslation } from 'react-i18next';
 import { useTranslation } from 'react-i18next';
 import Button from '../shared/Button'
 import SectionWrapper from '../shared/SectionWrapper';
@@ -6,7 +5,7 @@ import SectionWrapper from '../shared/SectionWrapper';
 const ContactMe = () => {
   const { t } = useTranslation();
   return (
-    <SectionWrapper title='contactme' id='contact' className='ml-auto mr-32 py-28 px-5'>
+    <SectionWrapper title='contactme' id='contact'>
       <div className='my-12'>
         <p className='mb-12'>{t('contatcme.titleOne')}
         <a href="mailto:luciano.g.lima93@gmail.com"

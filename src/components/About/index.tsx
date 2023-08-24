@@ -1,13 +1,12 @@
 import image from '@/assets/images/eu.jpg';
-import './styles.css';
 import SectionWrapper from '../shared/SectionWrapper';
 import useAbout from './useAbout';
+import './styles.css';
 
 const About = () => {
   const { t, tecnlogies } = useAbout();
-  
   return (
-    <SectionWrapper title='about' id='about' className='mx-auto pt-28 px-5 sm:px-8'>
+    <SectionWrapper oddEven='odd' title='about' id='about' className='sm:px-8'> 
       <div className='w-full xl:grid xl:grid-cols-3/2 flex flex-col gap-12 mt-12'>
         <div>
           <p className='mb-4' dangerouslySetInnerHTML={

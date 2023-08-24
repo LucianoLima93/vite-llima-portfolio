@@ -6,7 +6,9 @@ const useNavigation = () => {
   const navigateToComponent = (component:string) => {
     window.location.href = `#${component}`;
   };
-
+  const goToTop = () => {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  };
   const ulVariants = {
     open: {
       transition: { staggerChildren: 0.07, delayChildren: 0.2 }
@@ -62,7 +64,7 @@ const useNavigation = () => {
     {...props}
     />
   );
-  return {ulVariants, itemVariants, sidebarVariants, Path, t, navigateToComponent};
+  return {ulVariants, itemVariants, sidebarVariants, Path, t, navigateToComponent, goToTop};
 };
 
 export default useNavigation;

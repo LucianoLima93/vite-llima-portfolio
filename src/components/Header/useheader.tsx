@@ -2,11 +2,7 @@ import { useTranslation } from 'react-i18next';
 import useScroll from '../../hooks/useScroll';
 import { useEffect } from 'react';
 
-interface IUseHeaderProps {
-  headerRef: React.RefObject<HTMLHeadingElement> | React.RefObject<HTMLElement>;
-}
-
-const useHeader = ({headerRef}:IUseHeaderProps) => {
+const useHeader = ({ headerRef }: IUseHeaderProps) => {
   const { t } = useTranslation();
   const { visible, scroll } = useScroll();
 
@@ -18,11 +14,11 @@ const useHeader = ({headerRef}:IUseHeaderProps) => {
         headerRef.current.style.top = '16px';
       } else {
         headerRef.current.style.top = '0px';
-      } 
+      }
     }
   }, [visible, scroll.y]);
 
-  const menus:NavigationMenu[] = [
+  const menus: NavigationMenu[] = [
     {
       name: 'about'
     },

@@ -2,7 +2,6 @@ import Logo from '../Logo';
 import useHeader from './useheader';
 import Navigation from '../Navigation';
 import { useRef } from 'react';
-// import NavigationMobile from '../Navigation/NavigationMobile';
 import ToggleTheme from '../shared/ToggleTheme';
 
 const Header = () => {

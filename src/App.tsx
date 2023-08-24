@@ -1,6 +1,5 @@
 import { Suspense, useEffect, lazy } from 'react'
 import WebFont from 'webfontloader';
-import SocialMedias from './components/SocialMedias';
 
 const Header = lazy(() => import('./components/Header'));
 const Footer = lazy(() => import('./components/Footer'));
@@ -10,6 +9,7 @@ const Jobs = lazy(() => import('./components/Jobs'));
 const ContactMe = lazy(() => import('./components/ContactMe'));
 const Works = lazy(() => import('./components/Works'));
 const Loading = lazy(() => import('./components/Loading'));
+const SocialMedias = lazy(() => import('./components/SocialMedias'));
 
 function App() {
   useEffect(() => {
@@ -46,12 +46,7 @@ function App() {
             <ContactMe />
           </div>
           <SocialMedias className='hidden xl:flex' />
-          <div className={`xl:flex hidden flex-col gap-6 fixed bottom-0 right-14
-      after:block after:w-[1px] after:h-24 after:my-0 after:mx-auto after:bg-gray-400`}>
-            <a style={{writingMode: 'vertical-rl'}}
-            className='dark:text-gray-300 text-gray-800 transition-all text-sm dark:font-light font-normal tracking-wider dark:hover:text-teal-300 hover:text-teal-500 hover:-translate-y-1 cursor-pointer'
-              href="mailto:luciano.g.lima93@gmail.com">luciano.g.lima93@gmail.com</a>
-          </div>
+          <SocialMedias className='hidden xl:flex' left={false} />
           <Footer/>
         </main>
       </Suspense >

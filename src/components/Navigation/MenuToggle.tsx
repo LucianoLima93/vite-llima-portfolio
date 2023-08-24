@@ -1,4 +1,3 @@
-'use client'
 import useNavigation from "./useNavigation";
 
 const MenuToggle: React.FC<IMenuToggleProps> = ({ toggle }) => {

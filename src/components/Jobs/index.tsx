@@ -1,7 +1,7 @@
 import { useRef } from "react";
-import Title from "../shared/Title";
 import useJobs from "./useJobs";
 import Content from "./Content";
+import SectionWrapper from "../shared/SectionWrapper";
 
 const Experience = () => {
   const defaulOpen = useRef<HTMLButtonElement>(null);
@@ -9,10 +9,7 @@ const Experience = () => {
   const { switchTab, allTabs, jobs } = useJobs({ defaulOpen, highLighter });
   
   return (
-    <section data-aos="fade-up"
-      data-aos-duration='1500'
-      className="w-full max-w-[900px] ml-auto lg:mr-32 mr-auto py-28 px-5" id="experience">
-      <Title title="experience"/>
+    <SectionWrapper id="experience" title="experience" oddEven="even">
       <div className="xl:grid xl:grid-cols-1/4 flex flex-col gap-8 mt-12">
         <div className={`tab-jobs border-l-2 dark:border-gray-800 md:w-max h-fit w-full
           relative md:overflow-auto overflow-scroll overflow-y-hidden flex xl:flex-col items-start justify-start`}>
@@ -27,7 +24,7 @@ const Experience = () => {
         </div>
         <Content jobs={jobs}/>
       </div>
-    </section>
+    </SectionWrapper>
   )
 }
 

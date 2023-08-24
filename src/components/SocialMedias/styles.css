@@ -1,0 +1,3 @@
+.social-media-icon {
+  @apply dark:text-gray-400 text-gray-800 transition-all dark:hover:text-teal-300 hover:text-teal-500 hover:-translate-y-1 cursor-pointer md:text-[1.4em] text-[1.8em];
+}

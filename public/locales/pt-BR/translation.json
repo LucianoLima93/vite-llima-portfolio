@@ -89,6 +89,18 @@
       ]
     }
   ],
+  "works": {
+    "subtitle": "Projeto em Destaque",
+    "title": "Site portfolio",
+    "description": "Projeto pessoal criado como currículo e portfolio onde falo um pouco sobre mim e demonstro minhas habilidades e competencia como desenvolvedor",
+    "technologies": [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "Vitest",
+      "Storybook"
+    ]
+  },
   "contatcme": {
     "titleOne": "Atualmente estou em busca de novas oportunidades de emprego. Entre em contato comigo via ",
     "titleTwo": " que responderei o mais breve possível.",

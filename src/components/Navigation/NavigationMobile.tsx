@@ -7,17 +7,13 @@ import MenuToggle from './MenuToggle';
 import Button from '../shared/Button';
 import useHeader from '../Header/useheader';
 
-interface INavigationMobileProps {
-  menus: NavigationMenu[];
-}
-
 const NavigationMobile: React.FC<INavigationMobileProps> = ({ menus }) => {
   const containerRef = useRef<HTMLElement>(null);
   const { ulVariants, itemVariants, sidebarVariants, t } = useNavigation();
   const [isOpen, toggleOpen] = useCycle(false, true);
   const { height } = useDimensions(containerRef);
-  useHeader({headerRef: containerRef});
-  
+  useHeader({ headerRef: containerRef });
+
   return (
     <motion.nav
       initial={false}
