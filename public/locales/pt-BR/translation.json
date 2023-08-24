@@ -33,7 +33,7 @@
       "Tailwind CSS"
     ],
     "subtitle": "Aqui estão algumas tecnologias com as quais tenho trabalhado recentemente:",
-    "description": "Olá, meu nome é Luciano, trabalho com desenvolvimento desde 2017, mas meu interesse com desenvolvimento web iniciou-se em 2019, quando após ser aprovado em uma seleção interna para um novo projeto de desenvolvimento web com <b class='text-teal-500'>Vue</b>, comecei a estudar e me aprofuntar mais em <b class ='text-teal-500'>HTML</b>, <b class='text-teal-500'>CSS</b> e <b class='text-teal-500'>JavaScript</b>.<br /><br />Desde então, venho estudando e me aperfeiçoando cada vez mais, buscando sempre aprender novas tecnologias e metodologias de desenvolvimento.<br />Atualmente, desenvolvo aplicações web com <b class='text-teal-500'>React</b>"
+    "description": "Olá, meu nome é Luciano, trabalho com desenvolvimento desde 2017, mas meu interesse com desenvolvimento web iniciou-se em 2019, quando após ser aprovado em uma seleção interna para um novo projeto web com <b class='text-teal-500'>Vue</b>, comecei a estudar e me aprofuntar mais em <b class ='text-teal-500'>HTML</b>, <b class='text-teal-500'>CSS</b> e <b class='text-teal-500'>JavaScript</b>.<br /><br />Desde então, venho me aperfeiçoando cada vez mais, buscando sempre aprender novas tecnologias e metodologias de desenvolvimento.<br />Atualmente, desenvolvo aplicações web com <b class='text-teal-500'>React JS</b> como framework base."
   },
   "jobs": [
     {
@@ -113,6 +113,6 @@
   },
   "root": {
     "usedTechnologies": "Habilidades e competências desenvolvidas",
-    "contact": "Entre em contato comigo"
+    "contact": "Entre em contato"
   }
 }
