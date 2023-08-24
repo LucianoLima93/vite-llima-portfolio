@@ -4,5 +4,5 @@
 npx lint-staged
 echo "🚀🚀 Building the project 🚀🚀"
 npm run build
-echo "Run tests"
+echo "Running tests"
 npm run test:run

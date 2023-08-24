@@ -113,6 +113,8 @@
   },
   "root": {
     "usedTechnologies": "Habilidades e competências desenvolvidas",
-    "contact": "Entre em contato"
+    "contact": "Entre em contato",
+    "themeDark": "Tema escuro",
+    "themeLight": "Tema claro"
   }
 }

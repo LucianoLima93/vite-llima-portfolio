@@ -1,5 +1,6 @@
 import { Suspense, useEffect, lazy } from 'react'
 import WebFont from 'webfontloader';
+import useDarkTheme from './hooks/useDarkTheme';
 
 const Header = lazy(() => import('./components/Header'));
 const Footer = lazy(() => import('./components/Footer'));
@@ -12,6 +13,8 @@ const Loading = lazy(() => import('./components/Loading'));
 const SocialMedias = lazy(() => import('./components/SocialMedias'));
 
 function App() {
+  const { setTheme } = useDarkTheme();
+
   useEffect(() => {
     WebFont.load({
       google: {
@@ -32,6 +35,9 @@ function App() {
   };
   useEffect(() => {
     verifyHash();
+    if(localStorage.theme === 'undefined' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      setTheme('dark');
+    }
   }, [])
   return (
     <>
