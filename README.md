@@ -6,7 +6,7 @@ Este projeto utiliza as seguintes tecnologias:
 
 - [React](https://reactjs.org/): Biblioteca JavaScript de código aberto para construção de interfaces de usuário.
 - [TypeScript](https://www.typescriptlang.org/): Superset do JavaScript que adiciona tipagem estática opcional.
-- [Vite](https://vitejs.dev/) ou Ferramentas de construção para projetos web com React.
+- [Vite](https://vitejs.dev/) Ferramentas de construção para projetos web com React.
 - [Vitest](https://vitest.dev/): Framework de teste em JavaScript.
 - [TailwindCSS](https://tailwindcss.com/): Framework CSS utilitário para criação de designs personalizados.
 
