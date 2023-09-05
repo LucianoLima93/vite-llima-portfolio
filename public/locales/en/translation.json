@@ -1,10 +1,10 @@
 {
   "homepage": {
     "introOne": "Olá, meu nome é",
-    "introTwo": "Eu construo produtos para a web",
+    "introTwo": "Construo produtos para a web",
     "introThree": "",
     "introFour": "Desenvolvedor Front End",
-    "introFive": " especializado em construir produtos web de alta qualidade e excepcional experiência para o usuário.",
+    "introFive": " especializado na construção de produtos web de alta qualidade e experiência excepcional para o usuário.",
     "contact": "Entre em contato"
   },
   "menu": {
@@ -32,8 +32,8 @@
       "Vitest",
       "Tailwind CSS"
     ],
-    "subtitle": "Aqui estão algumas tecnologias com as quais tenho trabalhado recentemente:",
-    "description": "Olá, meu nome é Luciano, trabalho com desenvolvimento desde 2017, mas meu interesse com desenvolvimento web iniciou-se em 2019, quando após ser aprovado em uma seleção interna para um novo projeto web com <b class='text-teal-500'>Vue</b>, comecei a estudar e me aprofuntar mais em <b class ='text-teal-500'>HTML</b>, <b class='text-teal-500'>CSS</b> e <b class='text-teal-500'>JavaScript</b>.<br /><br />Desde então, venho me aperfeiçoando cada vez mais, buscando sempre aprender novas tecnologias e metodologias de desenvolvimento.<br />Atualmente, desenvolvo aplicações web com <b class='text-teal-500'>React JS</b> como framework base."
+    "subtitle": "Segue algumas tecnologias com as quais tenho trabalhado recentemente:",
+    "description": "Olá, meu nome é Luciano e trabalho com desenvolvimento desde 2017.<br /><br /> Meu interesse com desenvolvimento web começou em 2019, quando, após ser aprovado em uma seleção interna para um novo projeto web com <b class='text-teal-500'>Vue</b>, comecei a estudar e me aprofuntar mais em <b class ='text-teal-500'>HTML</b>, <b class='text-teal-500'>CSS</b> e <b class='text-teal-500'>JavaScript</b>.<br /><br />Desde então, venho me aperfeiçoando cada vez mais, buscando sempre aprender novas tecnologias e metodologias de desenvolvimento.<br />Atualmente desenvolvo aplicações web com <b class='text-teal-500'>React JS</b> como framework base."
   },
   "jobs": [
     {
