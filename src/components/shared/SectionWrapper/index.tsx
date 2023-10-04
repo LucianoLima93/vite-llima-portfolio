@@ -1,11 +1,6 @@
 import { twMerge } from "tailwind-merge";
 import Title from "../Title";
 
-interface ISectionWrapperProps extends React.HTMLAttributes<HTMLDivElement> {
-  title?: string;
-  oddEven?: 'odd' | 'even';
-}
-
 const SectionWrapper:React.FC<ISectionWrapperProps> = ({title, oddEven, ...rest}) => {
   return (
     <section

@@ -1,10 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 
-const useNavigation = (
-  menuToggleRef?:React.RefObject<HTMLButtonElement> | null,
-  asideRef?:React.RefObject<HTMLHeadingElement> | null
-  ) => {
+const useNavigation = ({menuToggleRef, asideRef}:IUseNavigationPros) => {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 

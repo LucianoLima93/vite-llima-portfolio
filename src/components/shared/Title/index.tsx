@@ -1,9 +1,5 @@
 import { useTranslation } from "react-i18next"
 
-interface ITitleProps {
-  title: string;
-}
-
 const Title:React.FC<ITitleProps> = ({title}) => {
   const { t } = useTranslation();
 

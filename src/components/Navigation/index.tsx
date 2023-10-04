@@ -4,7 +4,7 @@ import ToggleTheme from "../shared/ToggleTheme";
 import useNavigation from "./useNavigation";
 
 const Navigation: React.FC<INavigationProps> = ({ menus, ...rest }) => {
-  const { t, navigateToComponent } = useNavigation();
+  const { t, navigateToComponent } = useNavigation({});
   let increment = 0;
   return (
     <div {...rest} className={twMerge('relative', rest.className)}>

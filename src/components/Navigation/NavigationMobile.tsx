@@ -7,7 +7,7 @@ import Button from '../shared/Button';
 const NavigationMobile: React.FC<INavigationProps> = ({ menus, ...rest }) => {
   const menuToggleRef = useRef<HTMLButtonElement>(null);
   const asideRef = useRef<HTMLHeadingElement>(null);
-  const { t, navigateToComponent, setIsOpen, isOpen } = useNavigation(menuToggleRef, asideRef);
+  const { t, navigateToComponent, setIsOpen, isOpen } = useNavigation({menuToggleRef, asideRef});
 
   return (
     <nav {...rest} className={twMerge('flex', rest.className)}>

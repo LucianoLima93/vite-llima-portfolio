@@ -8,3 +8,8 @@ interface INavigationProps extends React.HTMLAttributes<HTMLDivElement> {
 interface IMenuToggleProps extends React.HTMLAttributes<HTMLButtonElement> {
   refButton: React.RefObject<HTMLButtonElement>;
 }
+
+type IUseNavigationPros =  {
+  menuToggleRef?:React.RefObject<HTMLButtonElement> | null,
+  asideRef?:React.RefObject<HTMLHeadingElement> | null
+}

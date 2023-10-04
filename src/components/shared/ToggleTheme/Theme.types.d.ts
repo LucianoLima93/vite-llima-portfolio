@@ -1,0 +1,1 @@
+interface ToggleThemeProps extends React.HTMLAttributes<HTMLDivElement> {}

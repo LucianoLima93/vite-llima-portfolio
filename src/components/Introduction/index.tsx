@@ -6,7 +6,7 @@ import useNavigation from '../Navigation/useNavigation'
 
 const Introduction = () => {
   const { t } = useTranslation();
-  const { navigateToComponent } = useNavigation();
+  const { navigateToComponent } = useNavigation({});
   return (
     <section className="w-full max-w-[900px] mx-auto pt-32 md:pt-12 md:h-[calc(100vh-160px) h-full]">
       <div className="pb-8 px-5 h-[calc(100vh-160px)]">

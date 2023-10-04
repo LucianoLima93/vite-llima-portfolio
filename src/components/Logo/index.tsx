@@ -4,7 +4,7 @@ import { twMerge } from 'tailwind-merge';
 import useNavigation from '../Navigation/useNavigation';
 
 const Logo: React.FC<LogoProps> = ({ animation = 'initializing', ...rest }) => {
-  const { goToTop } = useNavigation();
+  const { goToTop } = useNavigation({});
   return (
     <div {...rest}
       onClick={() => goToTop()}

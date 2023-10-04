@@ -4,8 +4,6 @@ import './styles.css';
 import { twMerge } from 'tailwind-merge';
 import { useTranslation } from 'react-i18next';
 
-interface ToggleThemeProps extends React.HTMLAttributes<HTMLDivElement> {}
-
 const ToggleTheme:React.FC<ToggleThemeProps> = ({...rest}) => {
   const { t } = useTranslation();
   const {colorTheme, setTheme} = useDarkTheme();
